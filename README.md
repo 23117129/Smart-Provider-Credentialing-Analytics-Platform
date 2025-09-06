@@ -1,20 +1,20 @@
 # Smart Provider Credentialing Analytics Platform
 
-## 🚀 Enhanced with Local AI-Powered Insights and Interactive Dashboards
+##  Enhanced with Local AI-Powered Insights and Interactive Dashboards
 
 A comprehensive healthcare data quality analytics platform that combines advanced data validation, local AI-powered natural language processing, and interactive visualizations to help healthcare organizations monitor provider credentialing compliance, identify data quality issues, and drive continuous improvements.
 
-## 🎯 Key Benefits
+## Key Benefits
 
-- 🔐 No API Keys Required: No OpenAI or other external API dependencies
-- 🏠 Fully Local: AI models run entirely on your machine
-- 💰 Cost-Free: No per-query charges or usage limits
-- 🔒 Privacy-First: Your data never leaves your environment
-- 🌐 Offline Capable: Works without internet connection (after initial model download)
+- No API Keys Required: No OpenAI or other external API dependencies
+- Fully Local: AI models run entirely on your machine
+- Cost-Free: No per-query charges or usage limits
+- Privacy-First: Your data never leaves your environment
+- Offline Capable: Works without internet connection (after initial model download)
 
-## ✨ New Features
+## New Features
 
-### 🤖 Local AI Integration (No API Keys Required!)
+### Local AI Integration (No API Keys Required!)
 - Enhanced Natural Language Understanding: Advanced AI-powered query processing using local models
 - Intelligent Response Generation: Context-aware responses that provide actionable insights
 - Smart Recommendations: AI-generated follow-up questions and suggestions
@@ -22,7 +22,7 @@ A comprehensive healthcare data quality analytics platform that combines advance
 - Privacy-First: All AI processing runs locally on your machine
 - Cost-Free: No external API dependencies or usage charges
 
-### 📊 Interactive Dashboard & Visualizations
+### Interactive Dashboard & Visualizations
 - Real-time Quality Score Gauge: Visual representation of overall data quality
 - Interactive Charts: Dynamic charts for issues by type, specialties, and states
 - License Expiration Timeline: Trend analysis of license expirations
@@ -37,7 +37,7 @@ A comprehensive healthcare data quality analytics platform that combines advance
 - Export Capabilities: Download results in CSV format
 - Responsive Design: Works seamlessly across different screen sizes
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 - Data Quality Engine (`src/engine.py`): Core analytics and validation engine
@@ -68,7 +68,7 @@ A comprehensive healthcare data quality analytics platform that combines advance
 - Where configured: See src/genai.py (_initialize_local_models) and LOCAL_AI_README.md
 - Customize: Change models via “Model Customization” in this README
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -106,7 +106,7 @@ When you first use AI features, the system will:
 
 ### Quick Demo with Sample Data
 1. Start the application
-2. Click "🚀 Load Sample Dataset" in the sidebar
+2. Click "Load Sample Dataset" in the sidebar
 3. Explore the interactive dashboard and charts
 4. Try AI-powered queries like:
    - "How many providers have expired licenses?"
@@ -114,38 +114,38 @@ When you first use AI features, the system will:
    - "What's our overall data quality score?"
    - "Show me phone formatting issues"
 
-## 📈 Features & Capabilities
+## Features & Capabilities
 
 ### Data Quality Analytics
-- ✅ License expiration tracking and compliance
-- ✅ NPI number validation and missing data detection
-- ✅ Phone number format validation
-- ✅ Duplicate provider record detection
-- ✅ Multi-state licensing analysis
-- ✅ Specialty-based quality metrics
+- License expiration tracking and compliance
+- NPI number validation and missing data detection
+- Phone number format validation
+- Duplicate provider record detection
+- Multi-state licensing analysis
+- Specialty-based quality metrics
 
 ### Interactive Visualizations
-- 📊 Quality score gauge with thresholds
-- 📈 Issues distribution charts
-- 🗺️ State-wise analysis
-- 📅 License expiration timeline
-- 🏥 Specialty performance analytics
-- 🔍 Duplicate analysis insights
+- Quality score gauge with thresholds
+- Issues distribution charts
+- State-wise analysis
+- License expiration timeline
+- Specialty performance analytics
+- Duplicate analysis insights
 
 ### AI-Powered Features
-- 🤖 Natural language query processing
-- 💡 Intelligent response generation
-- 🎯 Smart follow-up suggestions
-- 📝 Context-aware insights
-- 🔄 Conversational interface
+- Natural language query processing
+- Intelligent response generation
+- Smart follow-up suggestions
+- Context-aware insights
+- Conversational interface
 
 ### Export & Reporting
-- 📥 CSV data exports
-- 📋 Compliance reports
-- 📊 Custom filtered views
-- 📈 Analytics summaries
+- CSV data exports
+- Compliance reports
+- Custom filtered views
+- Analytics summaries
 
-## 🛠️ Configuration
+## Configuration
 
 ### Optional Environment Variables
 ```bash
@@ -168,7 +168,7 @@ The platform supports multiple data inputs:
 - License Databases: State-specific license validation (NY, CA)
 - NPI Registry: National Provider Identifier validation
 
-## 📊 Performance
+## Performance
 
 ### Resource Usage
 - RAM: ~500MB for loaded models
@@ -180,7 +180,7 @@ The platform supports multiple data inputs:
 - Warm Queries: <100ms response time
 - Rule-based Fallback: <10ms response time
 
-## 🏥 Use Cases
+## Use Cases
 
 ### Healthcare Organizations
 - Monitor provider credentialing compliance
@@ -200,7 +200,7 @@ The platform supports multiple data inputs:
 - Track multi-state licensing compliance
 - Export data for external systems
 
-## 🔧 Technical Stack
+## Technical Stack
 
 - Backend: Python, Pandas, DuckDB
 - Frontend: Streamlit with custom CSS
@@ -209,7 +209,7 @@ The platform supports multiple data inputs:
 - Data Processing: Pandas, NumPy
 - APIs: FastAPI (available separately)
 
-## 📱 API Access
+## API Access
 
 The platform also includes a REST API for programmatic access:
 
@@ -221,7 +221,7 @@ uvicorn src.api:app --host 0.0.0.0 --port 8000
 curl -X POST "http://localhost:8000/query" -F "text=How many expired licenses?"
 ```
 
-## 🎯 Advanced Usage
+## Advanced Usage
 
 ### Custom Intent Patterns
 Add your own patterns in `src/intents.py` for domain-specific queries.
@@ -238,21 +238,21 @@ The local AI approach scales horizontally:
 - No API rate limits or quotas
 - Consistent performance regardless of usage volume
 
-## 🆙 Migration from API-based Approach
+## Migration from API-based Approach
 
 ### What Changed
-- ✅ Removed `openai` dependency
-- ✅ Added `sentence-transformers` and `transformers`
-- ✅ Enhanced response generation with domain knowledge
-- ✅ Improved user interface messaging
+- Removed `openai` dependency
+- Added `sentence-transformers` and `transformers`
+- Enhanced response generation with domain knowledge
+- Improved user interface messaging
 
 ### What Stayed the Same
-- ✅ All existing functionality preserved
-- ✅ Same natural language interface
-- ✅ Compatible with all existing queries
-- ✅ Dashboard and visualization features unchanged
+- All existing functionality preserved
+- Same natural language interface
+- Compatible with all existing queries
+- Dashboard and visualization features unchanged
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Models Not Loading
 - Check internet connection for initial download
@@ -270,7 +270,7 @@ The system includes comprehensive error handling:
 - Clear user feedback about AI availability
 - Graceful degradation without feature loss
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -278,11 +278,11 @@ The system includes comprehensive error handling:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support
+##  Support
 
 For issues and questions:
 1. Check the documentation
@@ -290,7 +290,7 @@ For issues and questions:
 3. Create a new issue with detailed information
 4. For AI features, ensure your system meets the minimum requirements
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - Real-time data streaming integration
 - Advanced ML-based anomaly detection
@@ -299,7 +299,7 @@ For issues and questions:
 - Automated report scheduling
 - Advanced role-based access controls
 
-## 🎉 Benefits Summary
+##  Benefits Summary
 
 This local AI approach provides:
 - Enhanced user experience with intelligent query understanding
